@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>王豪豪在线简历</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_974371_cqiyab42oyq.css">
+    <style>/*css reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            margin-left: 1em;
+        }
+        li {
+            margin-top: 10px;
+        }
+
+        /*layout*/
+        body {
+            display: grid;
+            grid: auto auto / 1fr 0 700px 1fr;  //改成 0了
+        }
+        header {
+            background: lightgreen;
+            grid-column: 1 / span 4;
+            grid-row: 1;
+        }
+        main {
+            grid-column: 3;
+            grid-row: 2;
+        }
+        aside {
+
+            grid-column: 2;
+            grid-row: 2;
+        }
+        @media (max-width: 1000px) {
+            body {
+                grid: 100px 400px / 1fr 200px 400px 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                grid: auto auto auto / 1fr;
+                padding: 0 10px 30px 10px;
+            }
+            header {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            main {
+                grid-column: 1;
+                grid-row: 2;
+            }
+            aside {
+                grid-column: 1;
+                grid-row: 3;
+            }
+        }
+
+        /*common*/
+        body {
+            font: 14px/1.5 Arial;
+            color: #333;
+            padding-bottom: 30px;
+        }
+
+        /*page*/
+        header {
+            text-align: center;
+            padding: 30px;
+            background: #444;
+            color: #fff;
+        }
+        header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        header figcaption {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        header figure p {
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        section {
+            display: grid;
+            grid: auto auto / 50px 120px 1fr;
+            align-items: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        section > .iconfont {
+            grid-row: 1;
+            grid-column: 1;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: #66a9a3;
+            border-radius: 50%;
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        section > h2 {
+            grid-row: 1;
+            grid-column: 2;
+            font-size: 18px;
+        }
+        section > hr {
+            grid-row: 1;
+            grid-column: 3;
+            border: none;
+            height: 3px;
+            background: #66a9a3;
+        }
+        section >.detail {
+            grid-row: 2;
+            grid-column: 2/span 2
+        }
+        section .icon-list {
+            display: flex;
+            align-items: center;
+        }
+        section .icon-list .iconfont {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        section .skill-bar dt {
+            margin-top: 16px;
+        }
+        section .skill-bar dd {
+            height: 3px;
+            background: #eaeaea;
+        }
+        section .skill-bar dd div {
+            height: 100%;
+            background: #66a9a3;
+            margin-top: 10px;
+        }
+        section .timeline-panel {
+            display: grid;
+            grid: auto auto / 120px 1fr auto;
+            align-items: center;
+            margin-top: 16px;
+        }
+        section .timeline-panel .date {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        section .timeline-panel > h3 {
+            grid-row: 1;
+            grid-column: 2;
+        }
+        section .timeline-panel .intro {
+            grid-row: 1;
+            grid-column: 3;
+            color: #666;
+        }
+        section .timeline-panel .detail {
+            grid-row: 2;
+            grid-column: 2/span 2;
+            margin-top: 10px;
+        }</style>
+</head>
+<body>
+<header>
+    <figure>
+        <img src="http://cloud.hunger-valley.com/18-12-19/61170968.jpg" alt="头像">
+        <figcaption>王豪豪</figcaption>
+        <p>应聘前端工程师</p>
+    </figure>
+</header>
+<main>
+
+    <section>
+        <span class="iconfont icon-personal"></span>
+        <h2>基本信息</h2>
+        <hr>
+        <div class="detail">
+            <div class="icon-list"> <span class="iconfont icon-personal"></span>男 | 24岁 | 北京</div>
+            <div class="icon-list"><span class="iconfont icon-phone"></span>13253356185</div>
+            <div class="icon-list"><span class="iconfont icon-wechat"></span>whh544956639</div>
+            <div class="icon-list"><span class="iconfont icon-email"></span>544956639@qq.com</div>
+
+
+        </div>
+    </section>
+    <section>
+        <span class="iconfont icon-education"></span>
+        <h2>教育经历</h2>
+        <hr>
+        <div class="detail">
+            <div class="timeline-panel">
+                <div class="date">2015~2019</div>
+                <h3>郑州大学</h3>
+                   <p class="intro"><span class="iconfont icon-education"> </span> 软件工程 本科</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <span class="iconfont icon-project"></span>
+        <h2>项目经历</h2>
+        <hr>
+        <div class="detail">
+            <div class="timeline-panel">
+                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <h3>哈哈记账</h3>
+                <div class="detail">
+                    <ul>
+                        <li>一款基于 Vue、VueRouter、Vuex、TypeScript 的移动端单页面应用,这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账， 而且可以通过图表查看自己的消费习惯。
+                            </li>
+                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
+                        <li>由本人独立设计并实现，开发期间遇到了很多 webpack和TypeScript的问题（svg插件）（TypeScript 使用computed，Prop），解决过程已记录在本人的博客里面 ，源代码完全使用TypeScript 实现，用到了装饰器语法</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-panel">
+                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <h3>多人博客</h3>
+                <div class="detail">
+                    <ul>
+                        <li>该项目使用Vue 实现了一个在线博客分享的平台，包含首页、用户文章列表、登录、注册、个人管理、编辑、发布等功能，项目中使用Grid做页面布局，以Vue Cli为基础创建项目模板，使用less 为css 预处理，使用Element UI作UI交互，通过Vue Router 实现路由跳转，通过vuex 实现状态管理 ，用Axios 获取数据</li>
+                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
+                        <li>由本人独立设计并实现，开发期间遇到了很多 webpack和TypeScript的问题（svg插件）（TypeScript 使用computed，Prop），解决过程已记录在本人的博客里面 ，源代码完全使用TypeScript 实现，用到了装饰器语法</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-panel">
+                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <h3>便查导航</h3>
+                <div class="detail">
+                    <ul>
+                        <li>用JQuery实现的一个便查导航网站</li>
+                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
+                        <li>该项目模仿谷歌浏览器的导航首页，完全由JQuery实现，并且适配PC端和移动端，可以喜好自定义添加收藏网址，方便快捷，使用LocalStorage存储数据信息，完成这个项目后使我对JQuery的操作更加熟练</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="timeline-panel">
+                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <h3>萌神皮卡丘</h3>
+                <div class="detail">
+                    <ul>
+                        <li>这是在学习 CSS3时制作的一个非常可爱的作品。很多添加了CSS动画，添加了动态展示和速度调节。</li>
+                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
+                        <li>由本人独立设计并实现，开发期间遇到了很多 webpack和TypeScript的问题（svg插件）（TypeScript 使用computed，Prop），解决过程已记录在本人的博客里面 ，源代码完全使用TypeScript 实现，用到了装饰器语法</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section>
+        <span class="iconfont icon-introduction"></span>
+        <h2>掌握技能</h2>
+        <hr>
+        <div class="detail">
+            <ul>
+                <li>  熟悉页面制作技巧，能将设计稿完美还原</li>
+                <li>  熟悉前后端分离技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+                <li>  熟练掌握 Vue全家桶的使用，包括 VueCli、VueRouter、Vuex 等</li>
+                <li>  熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+                <li>  熟悉TypeScript 的使用，我的项目就是 TS 实现的</li>
+                <li>  了解 Webpack 的配置和优化</li>
+                <li>  熟练 C#、Oracle数据库、Winform窗体程序开发</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <span class="iconfont icon-skills"></span>
+        <h2>开源项目</h2>
+        <hr>
+        <div class="detail">
+            <div class="timeline-panel">
+                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <h3>简易画板</h3>
+                <div class="detail">
+                    <ul>
+                        <li>我在学习 Canvas 时做的一个小作品 </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-panel">
+                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <h3>自己写的 DOM 库</h3>
+                <div class="detail">
+                    <ul>
+                        <li>这是在学习DOM 的时候用原生API封装的一个库
+                            主要实现了元素选择、元素创建，元素删除，内容修改等常见功能 让我对原生的API使用和理解更好一点 </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <span class="iconfont icon-experience"></span>
+        <h2>工作经历</h2>
+        <hr>
+        <div class="detail">
+            <div class="timeline-panel">
+                <div class="date">2019/07-2021/04</div>
+                <h3>江苏金恒信息科技股份有限公司</h3>
+                <p class="intro">开发工程师</p>
+                <div class="detail">
+                    <ul>
+                        <li>独立负责公司检化验系统的升级开发和维护工作，参与项目需求调研十余次，独立参与项目细节沟通三十余次。开发页面30多个，优化页面100多个，系统用户1000余人，累计使用次数200万次。负责给新入职同事进行培训，提高其开发工作效率
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <span class="iconfont icon-skills"></span>
+        <h2>其他链接</h2>
+        <hr>
+        <div class="detail">
+            <div class="timeline-panel">
+                <div class="detail">
+                    <ul>
+                        <li><a href="">我的博客:</a>目前已有20篇技术文章 </li>
+                        <li><a href="">我的 GitHub:</a>过去三个月有 150 次提交 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
