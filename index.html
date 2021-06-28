@@ -11,6 +11,14 @@
             padding: 0;
             box-sizing: border-box;
         }
+    strong {
+        font-weight: normal;
+        color: deepskyblue;
+    }
+       a{
+           text-decoration:none;
+           border-bottom: 1px solid;
+       }
         ul {
             margin-left: 1em;
         }
@@ -125,6 +133,13 @@
             grid-row: 2;
             grid-column: 2/span 2
         }
+    section >.info {
+        grid-row: 2;
+        grid-column: 3/span 2;
+        display:flex;
+        justify-content: space-around;
+
+    }
         section .icon-list {
             display: flex;
             align-items: center;
@@ -163,6 +178,7 @@
             grid-row: 1;
             grid-column: 3;
             color: #666;
+            margin-right: 50px;
         }
         section .timeline-panel .detail {
             grid-row: 2;
@@ -173,7 +189,7 @@
 <body>
 <header>
     <figure>
-        <img src="http://cloud.hunger-valley.com/18-12-19/61170968.jpg" alt="头像">
+        <img src="./image/王豪豪.jpg" alt="头像">
         <figcaption>王豪豪</figcaption>
         <p>应聘前端工程师</p>
     </figure>
@@ -184,11 +200,16 @@
         <span class="iconfont icon-personal"></span>
         <h2>基本信息</h2>
         <hr>
-        <div class="detail">
-            <div class="icon-list"> <span class="iconfont icon-personal"></span>男 | 24岁 | 北京</div>
-            <div class="icon-list"><span class="iconfont icon-phone"></span>13253356185</div>
-            <div class="icon-list"><span class="iconfont icon-wechat"></span>whh544956639</div>
-            <div class="icon-list"><span class="iconfont icon-email"></span>544956639@qq.com</div>
+        <div class="info">
+            <div>
+                <div class="icon-list"> <span class="iconfont icon-personal"></span>男 | 24岁 | 北京</div>
+                <div class="icon-list"><span class="iconfont icon-phone"></span><a href="tel:12345678">13253356185</a></div>
+            </div>
+           <div>
+               <div class="icon-list"><span class="iconfont icon-wechat"></span>whh544956639</div>
+               <div class="icon-list"><span class="iconfont icon-email"></span><a href="mailto:fangyinghang@foxmail.com">544956639@qq.com</a></div>
+           </div>
+
 
 
         </div>
@@ -213,50 +234,46 @@
         <hr>
         <div class="detail">
             <div class="timeline-panel">
-                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <div class="date"><a href="https://github.com/zzuWanghao/haha-accounting">源码链接</a>  <a href="https://zzuwanghao.github.io/haha-accounting-website/#/money">项目预览</a> </div>
                 <h3>哈哈记账</h3>
                 <div class="detail">
                     <ul>
-                        <li>一款基于 Vue、VueRouter、Vuex、TypeScript 的移动端单页面应用,这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账， 而且可以通过图表查看自己的消费习惯。
+                        <li>一款基于 <strong> Vue、VueRouter、Vuex、TypeScript </strong>的移动端单页面应用,这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账， 而且可以通过图表查看自己的消费习惯。
                             </li>
-                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
-                        <li>由本人独立设计并实现，开发期间遇到了很多 webpack和TypeScript的问题（svg插件）（TypeScript 使用computed，Prop），解决过程已记录在本人的博客里面 ，源代码完全使用TypeScript 实现，用到了装饰器语法</li>
+                        <li>技术栈：vue、vue-router、vuex、typescript、webpack、es6、echarts</li>
+                        <li>由本人独立设计并实现，开发期间遇到了很多 webpack和TypeScript的问题，解决过程已记录在本人的博客里面 ，源代码完全使用TypeScript 实现，用到了装饰器语法</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-panel">
-                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <div class="date"><a href="https://github.com/zzuWanghao/blog1">源码链接</a>  <a href="https://zzuwanghao.github.io/blog1/dist/#/">项目预览</a> </div>
                 <h3>多人博客</h3>
                 <div class="detail">
                     <ul>
-                        <li>该项目使用Vue 实现了一个在线博客分享的平台，包含首页、用户文章列表、登录、注册、个人管理、编辑、发布等功能，项目中使用Grid做页面布局，以Vue Cli为基础创建项目模板，使用less 为css 预处理，使用Element UI作UI交互，通过Vue Router 实现路由跳转，通过vuex 实现状态管理 ，用Axios 获取数据</li>
-                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
-                        <li>由本人独立设计并实现，开发期间遇到了很多 webpack和TypeScript的问题（svg插件）（TypeScript 使用computed，Prop），解决过程已记录在本人的博客里面 ，源代码完全使用TypeScript 实现，用到了装饰器语法</li>
+                        <li>该项目使用Vue 实现了一个在线博客分享的平台，包含<strong>首页、用户文章列表、登录、注册、个人管理、编辑、发布</strong>等功能，项目中使用Grid做页面布局，以<strong>Vue Cli</strong>为基础创建项目模板，使用less 为css 预处理，使用Element UI作UI交互，通过<strong>Vue Router</strong> 实现路由跳转，通过<strong>vuex </strong>实现状态管理，使用axios获取数据</li>
+                        <li>技术栈：vue-cli、vue、axios、vue-router、vuex、es6、yarn</li>
                     </ul>
                 </div>
             </div>
 
             <div class="timeline-panel">
-                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <div class="date"><a href="https://github.com/zzuWanghao/NAV-1">源码链接</a>  <a href="https://zzuwanghao.github.io/NAV-1/dist/index.html">项目预览</a> </div>
                 <h3>便查导航</h3>
                 <div class="detail">
                     <ul>
                         <li>用JQuery实现的一个便查导航网站</li>
-                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
-                        <li>该项目模仿谷歌浏览器的导航首页，完全由JQuery实现，并且适配PC端和移动端，可以喜好自定义添加收藏网址，方便快捷，使用LocalStorage存储数据信息，完成这个项目后使我对JQuery的操作更加熟练</li>
+                        <li>该项目<strong>模仿谷歌浏览器的导航首页</strong>，使用JQuery实现，并且适配PC端和移动端，可以喜好自定义添加收藏网址，方便快捷，使用<strong>LocalStorage</strong>存储数据信息，完成这个项目后使我对JQuery的操作更加熟练</li>
                     </ul>
                 </div>
             </div>
 
 
             <div class="timeline-panel">
-                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <div class="date"><a href="https://github.com/zzuWanghao/pikachu/">源码链接</a>  <a href="https://zzuwanghao.github.io/pikachu/dist/test.html">项目预览</a> </div>
                 <h3>萌神皮卡丘</h3>
                 <div class="detail">
                     <ul>
-                        <li>这是在学习 CSS3时制作的一个非常可爱的作品。很多添加了CSS动画，添加了动态展示和速度调节。</li>
-                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
-                        <li>由本人独立设计并实现，开发期间遇到了很多 webpack和TypeScript的问题（svg插件）（TypeScript 使用computed，Prop），解决过程已记录在本人的博客里面 ，源代码完全使用TypeScript 实现，用到了装饰器语法</li>
+                        <li>这是在学习 CSS3时制作的一个非常可爱的作品。添加了<strong>CSS动画</strong>，添加了<strong>动态展示和速度调节</strong>。</li>
                     </ul>
                 </div>
             </div>
@@ -272,12 +289,12 @@
         <div class="detail">
             <ul>
                 <li>  熟悉页面制作技巧，能将设计稿完美还原</li>
-                <li>  熟悉前后端分离技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
-                <li>  熟练掌握 Vue全家桶的使用，包括 VueCli、VueRouter、Vuex 等</li>
-                <li>  熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
-                <li>  熟悉TypeScript 的使用，我的项目就是 TS 实现的</li>
-                <li>  了解 Webpack 的配置和优化</li>
-                <li>  熟练 C#、Oracle数据库、Winform窗体程序开发</li>
+                <li>  熟悉前后端分离技术，包括 <strong>AJAX、跨域、前端路由、Cookie、Session</strong> 等</li>
+                <li>  熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+                <li>  熟悉 <strong>ES6</strong>，包括 let / Promise / await / 析构赋值</li>
+                <li>  熟悉<strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+                <li>  了解 <strong>Webpack</strong> 的配置和优化</li>
+                <li>  熟练<strong>C#、Oracle数据库</strong>、Winform窗体程序开发</li>
             </ul>
         </div>
     </section>
@@ -287,7 +304,7 @@
         <hr>
         <div class="detail">
             <div class="timeline-panel">
-                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <div class="date"><a href="https://github.com/zzuWanghao/Drawing-demo">源码链接</a>  <a href="https://zzuwanghao.github.io/Drawing-demo/">项目预览</a> </div>
                 <h3>简易画板</h3>
                 <div class="detail">
                     <ul>
@@ -297,7 +314,7 @@
             </div>
 
             <div class="timeline-panel">
-                <div class="date"><a href="">源码链接</a>  <a href="">项目预览</a> </div>
+                <div class="date"><a href="https://github.com/zzuWanghao/dom-1">源码链接</a> <a href="">项目预览</a> </div>
                 <h3>自己写的 DOM 库</h3>
                 <div class="detail">
                     <ul>
@@ -337,8 +354,8 @@
             <div class="timeline-panel">
                 <div class="detail">
                     <ul>
-                        <li><a href="">我的博客:</a>目前已有20篇技术文章 </li>
-                        <li><a href="">我的 GitHub:</a>过去三个月有 150 次提交 </li>
+                        <li><a href="https://juejin.cn/user/1724452288332264/posts" >我的博客:</a>目前已有20篇技术文章 </li>
+                        <li><a href="https://github.com/zzuWanghao">我的 GitHub:</a>过去三个月有 150 次提交 </li>
                     </ul>
                 </div>
             </div>
